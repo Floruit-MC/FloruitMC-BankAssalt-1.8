@@ -1,0 +1,4 @@
+name: FloruitBankAssalt
+version: '1.0-SNAPSHOT'
+main: com.hanielcota.floruitbankassalt.FloruitBankAssaltPlugin
+api-version: '1.21'

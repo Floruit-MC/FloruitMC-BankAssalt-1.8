@@ -1,0 +1,40 @@
+mysql:
+  url: "jdbc:mysql://localhost:3306/banco?useSSL=false"
+  username: "root"
+  password: ""
+  pool-size: 10
+
+# Configurações do sistema de assalto
+assalto:
+  cooldown-hours: 1          # Tempo de cooldown em horas entre assaltos
+  min-total: 1000            # Valor mínimo no banco para permitir assalto
+  success-chance: 0.3        # Chance de sucesso do assalto (0.0 a 1.0)
+  steal-percentage: 0.1      # Porcentagem do total roubada em caso de sucesso
+
+# Mensagens exibidas no chat (seguindo o padrão &(cor)&lFLORUIT MC &f➔ &(cor)(emoji) Mensagem)
+messages:
+  # Comando padrão (sem subcomando)
+  default: "§e§lFLORUIT MC §f➔ §e✔ Use: /banco <depositar | sacar | saldo | total | assaltar>"
+
+  # Depósito
+  deposit-usage: "§c§lFLORUIT MC §f➔ §c✘ Use: /banco depositar <quantia>"
+  invalid-amount: "§c§lFLORUIT MC §f➔ §c✘ Quantia inválida! Use números."
+  deposit-error: "§c§lFLORUIT MC §f➔ §c✘ Erro ao depositar! Verifique seus fundos ou a quantia."
+  deposit-success: "§a§lFLORUIT MC §f➔ §a✔ Depositado {amount} com sucesso! Saldo no banco: {balance}"
+
+  # Saque
+  withdraw-usage: "§c§lFLORUIT MC §f➔ §c✘ Use: /banco sacar <quantia>"
+  withdraw-error: "§c§lFLORUIT MC §f➔ §c✘ Erro ao sacar! Verifique seu saldo."
+  withdraw-success: "§a§lFLORUIT MC §f➔ §a✔ Sacado {amount} com sucesso! Saldo no banco: {balance}"
+
+  # Saldo
+  balance: "§a§lFLORUIT MC §f➔ §a✔ Seu saldo no banco é: {balance}"
+
+  # Total
+  total: "§a§lFLORUIT MC §f➔ §a✔ Total guardado no banco (todos os jogadores): {total}"
+
+  # Assalto
+  assault-start-failed: "§c§lFLORUIT MC §f➔ §c✘ Não foi possível iniciar o assalto! (Cooldown, banco vazio ou inventário cheio)"
+  assault-start-success: "§a§lFLORUIT MC §f➔ §a✔ TNT de Assalto recebida! Coloque-a no banco."
+  assault-failed: "§c§lFLORUIT MC §f➔ §c✘ Assalto falhou!"
+  assault-success: "§a§lFLORUIT MC §f➔ §a✔ Assalto bem-sucedido! Novo total no banco: {total}"
