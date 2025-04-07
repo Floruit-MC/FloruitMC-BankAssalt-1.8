@@ -20,7 +20,3 @@ O **FloruitBankAssalt** é um plugin completo para gerenciamento de banco em ser
 | `/banco saldo`                 | Exibe o saldo atual do jogador no banco. |
 | `/banco total`                 | Mostra o total acumulado por todos os jogadores. |
 | `/banco assaltar`              | Inicia um assalto ao banco, entregando TNT especial. |
-
-## ⚙️ Configuração
-
-As mensagens do plugin podem ser personalizadas no `config.yml`:
